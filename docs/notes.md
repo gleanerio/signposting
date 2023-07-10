@@ -4,7 +4,7 @@
 
 The following are just some personal observations and thoughts.
 
-### 1
+### Question 1
 
 Signposting can be done via HTTP and HTML approaches.  The later
 is obviously easier for a group to implement since it doesn't rely
@@ -46,7 +46,7 @@ of a classic crawler if desired.  This aspect of controlling how
 indexing is done does seem to be getting some [fresh attention](https://blog.google/technology/ai/ai-web-publisher-controls-sign-up/)
 
 
-### 2
+### Question 2
 
 With the emergance of JSON-LD for the SDOTW approach, a huge ecosystem of
 tooling is leveraged since JSON-LD is just JSON. This does effectively hide
@@ -63,19 +63,27 @@ mature as those for serializing to JSON strcutures seems.   This could also
 just be me not aware of them
 
 
-### 3
+### Question 3
 
 The Signposting approach leveraging HTTP headers does have the potential for
 very large gains in performance and efficency for indexing large records.
 It definately seems there are different used cases that can lead to
 different architectural selections.
 
-### 4
+### Question 4
 
 It is interesting to look at some of the various approaches that groups
 are using for discovery.  The above points revolve around SDOTW and Signposting
 but other groups are using things like and STAC catalogs mapped to SDOTW,
 MQTT pubsub approaches.
+
+### Question 5
+
+What is the subject of the Singposting statements?  Is the URL of the source
+considered something like the  _subject IRI_ of the link statements?
+I ask only since trying to map these to a graph I need that concept.  Though
+I have fully thought this trhough to an implementation so any guidance is
+appreciated. 
 
 ### References
 

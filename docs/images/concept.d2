@@ -1,0 +1,23 @@
+direction: right
+
+# target
+r: Published Resource {
+net: HTTP aspect
+body: HTML aspect
+}
+
+# players
+pid: PID Graph
+kg: Knowledege Graph
+sph: Signposting client
+sdh: Structured Data client
+
+r.net -> sph: harvested by
+r.body -> sph: harvested by
+sph -> pid: generates
+
+sph -> sdh: can feed data graphs links to 
+r.body -> sdh: harvested by
+sdh -> pid: generates
+sdh -> kg: generates
+

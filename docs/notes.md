@@ -82,11 +82,77 @@ MQTT pubsub approaches.
 What is the subject of the Singposting statements?  Is the URL of the source
 considered something like the  _subject IRI_ of the link statements?
 I ask only since trying to map these to a graph I need that concept.  Though
-I have fully thought this trhough to an implementation so any guidance is
+I have not fully thought this trhough to an implementation so any guidance is
 appreciated. 
+
+Or is this is the case where a FDOF-IR is required to convey this information
+and if the FDOF-IR is not present then any conversion of links to triples is 
+problematic or at least ad hoc.  
+
+
+```JSON
+{
+  "@context": {
+    "@vocab": "https://example.org/id/fdof-o/"
+  },
+  "@graph": [
+    {
+      "@id": "http://njh.me/fdoIdentifier",
+      "hasMetadata": {
+        "@id": "http://njh.me/metadataRecordIdentifier"
+      },
+      "hasObjectLocation": {
+        "@id": "http://njh.me/ObjectLocation"
+      },
+      "hasType": {
+        "@id": "http://njh.me/FDOType"
+      }
+    },
+    {
+      "@id": "http://njh.me/fdofirIdentifier",
+      "@type": "fodfIR",
+      "isMetadataOf": {
+        "@id": "http://njh.me/fdoIdentifier"
+      }
+    }
+  ]
+}
+```
+
+The above IR would then be referenced by rel  _fdof-ir_ I assume?
+As seen below
+
+```
+HTTP/1.1 200
+Server: nginx/1.21.6
+Content-Type: text/turtle
+Connection: keep-alive
+Link: <https://fdof.org/object1/fdof-ir> ; rel="fdof-ir",
+         <https://fdof.org/object1/metadatarecord1> ; rel="fdof-metadata" ,
+         <https://fdof.org/object1/metadatarecord2> ; rel="fdof-metadata" ,
+         <https://fdof.org/types/dataset> ; rel="fdof-type"
+Accept: text/html, text/turtle, application/ld+json, application/rdf+xml
+Expires: 0
+```
+
+I am not yet sure I fully understand the relationship between the IR RDF
+and RDF represented by 
+
+```
+<https://fdof.org/object1/metadatarecord1> ; rel="fdof-metadata" ,
+```
+
+which might be typed as _application/ld+json_.
+
+I assume the IR should be limitd in scope only to the IR and is there a 
+suggsted namespace for it?   Or can one simple leverage DCAT or schema.org for 
+example?   
+
+
 
 ### References
 
+* [FAIR Digital Object Framework Documentation](https://fairdigitalobjectframework.org/)
 * [JSON-LD](https://json-ld.org/) and [Data on the Web Best Practices](https://www.w3.org/TR/dwbp/)
 * [Signposting](https://signposting.org/)
 * [STAC-Browser](https://github.com/radiantearth/stac-browser) 

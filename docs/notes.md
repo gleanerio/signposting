@@ -77,6 +77,10 @@ are using for discovery.  The above points revolve around SDOTW and Signposting
 but other groups are using things like and STAC catalogs mapped to SDOTW,
 MQTT pubsub approaches.
 
+Note also that some of the Signposting authors view it as a way to represent
+the topology of research objects.  The manner in which is enables or improves
+the crawling of this ecosystem is unknown to the author.
+
 ### Question 5
 
 What is the subject of the Singposting statements?  Is the URL of the source
@@ -149,13 +153,15 @@ suggsted namespace for it?   Or can one simple leverage DCAT or schema.org for
 example?   
 
 
-
 ### References
 
 * [FAIR Digital Object Framework Documentation](https://fairdigitalobjectframework.org/)
+* [FAIR Digital Objects and FAIR Signposting](https://zenodo.org/record/7977333)
 * [JSON-LD](https://json-ld.org/) and [Data on the Web Best Practices](https://www.w3.org/TR/dwbp/)
 * [Signposting](https://signposting.org/)
 * [STAC-Browser](https://github.com/radiantearth/stac-browser) 
 * [MQTT](https://mqtt.org/)
 * [GeoAPI](https://www.geoapi.org/) with [Java](https://www.geoapi.org/3.0/javadoc/org.opengis.geoapi/module-summary.html) and [Python / pygeoapi](https://pygeoapi.io/) implementations
+* [Open Archives Initiative ResourceSync Framework Specification](https://www.openarchives.org/rs/toc)
+
 

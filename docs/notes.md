@@ -155,13 +155,16 @@ example?
 
 ### References
 
+* [CDIF Discovery](https://github.com/Cross-Domain-Interoperability-Framework/Discovery)
 * [FAIR Digital Object Framework Documentation](https://fairdigitalobjectframework.org/)
 * [FAIR Digital Objects and FAIR Signposting](https://zenodo.org/record/7977333)
 * [JSON-LD](https://json-ld.org/) and [Data on the Web Best Practices](https://www.w3.org/TR/dwbp/)
 * [Signposting](https://signposting.org/)
+* [W3C Content Negotiation by Profile](https://www.w3.org/TR/dx-prof-conneg/)
 * [STAC-Browser](https://github.com/radiantearth/stac-browser) 
 * [MQTT](https://mqtt.org/)
 * [GeoAPI](https://www.geoapi.org/) with [Java](https://www.geoapi.org/3.0/javadoc/org.opengis.geoapi/module-summary.html) and [Python / pygeoapi](https://pygeoapi.io/) implementations
-* [Open Archives Initiative ResourceSync Framework Specification](https://www.openarchives.org/rs/toc)
-
+* [Open Archives Initiative ResourceSync Framework Specification](https://www.openarchives.org/rs/toc) and [spec](https://www.openarchives.org/rs/1.1/resourcesync)
+* [FDP Specs](https://fairdo.org/specifications/)
+* [Content Negotiation by Profile](https://www.w3.org/TR/dx-prof-conneg/)
 

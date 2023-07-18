@@ -167,4 +167,5 @@ example?
 * [Open Archives Initiative ResourceSync Framework Specification](https://www.openarchives.org/rs/toc) and [spec](https://www.openarchives.org/rs/1.1/resourcesync)
 * [FDP Specs](https://fairdo.org/specifications/)
 * [Content Negotiation by Profile](https://www.w3.org/TR/dx-prof-conneg/)
+* [Google Next Gen robots.txt](https://blog.google/technology/ai/ai-web-publisher-controls-sign-up/)
 

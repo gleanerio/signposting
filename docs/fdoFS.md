@@ -28,6 +28,32 @@ Accept: text/html, text/turtle, application/ld+json, application/rdf+xml
 Expires: 0
 ```
 
+## Notes
+
+Need to create FDO that define service calls into the exising NSDF data
+and functions/libraries.  I can use DuckDB over a set of Parquet 
+files (like the OIH graph parquet files).
+
+### Players
+
+- Signposting (client)
+- Grow (server)
+- FDO document (JSON-LD)
+
+### Questions
+
+- Is signposting really needed?
+- The object should have a web and data representation
+- This is really a case of FDO being generated to represent views into collections of data.
+
+### Broader Impacts
+
+- IRIS
+- OIH Services
+
+Look at previous work I did for mapping in /home/fils/src/Projects/NSDF/nsdf-catalog-graph
+
+
 
 ## References
 
